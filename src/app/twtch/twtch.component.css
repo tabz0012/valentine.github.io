@@ -1,0 +1,237 @@
+:root{
+
+  --img-transition: .3s;
+  --img-hidden: hidden;
+  --img-scale: scale(1.1);
+}
+
+.bg{
+  background-image: url(../../assets/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 100%;
+  }
+  *{
+    scroll-behavior: smooth;
+  }
+  
+  .text-uppercase{
+    font: 900 2rem sans-serif;
+    color: steelblue;
+    padding: 1rem;
+    text-align: center;
+    font-size: 40px;
+     color:red;
+    animation-name: fade-in;
+    
+    animation-duration: 9s;
+  }
+  @keyframes fade-in {
+    0%   { opacity: 0;}
+    25%  { opacity: 0.2;}
+    50%  {opacity: 0.5;}
+    75%  {opacity: 0.8;}
+    100% {opacity: 1;}
+  }
+  .text {
+  font-size: 30px;
+  
+  }
+  .text{
+    animation-name: springy-text;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  @keyframes springy-text {
+    0%   {
+      letter-spacing: 1.2em;
+      color: white;
+    }
+    100%   {
+      letter-spacing: 0.1em;
+      color: rgb(255, 3, 3);
+    }
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 70px;
+  }
+  
+  
+  .img-fluid{
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .fa-discord{
+    color: #5662f6;
+  }
+  .fa-twitch{
+    color: indigo;
+  }
+  
+  .list-group{
+    max-width: 100%;
+  }
+  
+  .btn-social{
+    display: flex;
+    justify-content: center;
+    
+    gap: 1rem;
+  }
+  .soc-buton{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #000;
+  }
+  .btn-social i{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+   
+  }
+  .btn-social a{
+    text-decoration: none;
+  }
+  .btn-main p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .btn-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top:30px;
+  }
+  .btn2-social{
+    display: flex;
+    justify-content: center;
+    
+    gap: 1rem;
+  }
+  .btn2-social i{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+   
+  }
+  .btn2-social a{
+    text-decoration: none;
+  }
+  .btn2-main p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .container h2{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 40px;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    50%{ opacity: 0.6;}
+    100% { opacity: 1; }
+  }
+  .card:hover{
+    -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: var(--img-scale);
+  transition: all 1200ms;
+  z-index: 99;
+  }
+  .card-title{
+    display: flex;
+    justify-content: center;
+   
+    scroll-behavior: smooth;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 25px;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }  
+  
+  button img{
+    width: 50px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 2rem;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+  }
+  .reveal {
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in-out;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in-out;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in-out;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+	0% {
+	  transform: translateX(-100px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+  @keyframes fade-right {
+	0% {
+	  transform: translateX(50px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+  }

@@ -1,0 +1,61 @@
+.shop{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav{
+    display: grid;
+    justify-content: center;
+    
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+.nav-item{
+    background-color: rgb(3, 3, 3);
+    
+}
+.card{
+    width: 600x;
+    
+    max-height: 100%;
+    border-radius: 40px;
+}
+.star{
+    display: flex;
+    justify-content: space-between;
+}
+.star h6{  
+    color: green;
+}
+.d-flex{
+    display: block;
+    justify-content: center;
+    margin-top: 50%;
+}
+.card-img-top{
+    border-radius: 40px 40px 0px 0px;
+    -webkit-box-shadow: -14px -13px 16px 1px rgb(255, 255, 255);
+    -moz-box-shadow: -14px -13px 16px 1px rgb(255, 255, 255);
+    box-shadow: -14px -13px 16px 1px rgb(248, 248, 248);
+}
+
+  button img{
+    width: 50px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 2rem;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+  }
+  .bg{
+    background-color: blueviolet;
+}
+

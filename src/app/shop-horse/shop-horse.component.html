@@ -1,0 +1,67 @@
+<div class="bg" >
+
+
+  <div class="row">
+  <div class="shop mt-5">
+      <h2>المتجر</h2>
+      
+  </div>
+  <div class="shop mt-2">
+      <h4>اختر المنتج الذي تريده وقم بشرائه بسهولة!</h4>
+  </div>
+  <div class="row mt-5">
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link bg-dark"  href="https://valentine.tebex.io/" target="_blank">
+          <i class="fa-solid fa-shop"> المتجر الرئيسي  </i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " data-bs-toggle="pill"  routerLink="/shop">الأساسية</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="pill" routerLink="/shop2">الأحصنة والعربات</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" routerLink="/shop3">الذهب</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="pill" routerLink="/shop4">الحزم</a>
+      </li>
+    </ul>
+  </div>
+  
+      
+  <div class="row"> 
+      <div class="container-fluid mt-5 p-4">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 p-3" *ngFor="let s of horse">
+                  <div class="card m-4">
+                      <img class="card-img-top" src="../../assets/images/{{s.image}}" alt="Card image">
+                      <div class="card-body">
+                        <h5 class="card-title">{{s.title}}</h5>
+                        
+                        <div class="star">
+                          <h6 class="mt-3">{{s.price}} </h6>
+                          <a href="{{s.link}}" target="_blank">
+                            <button type="button" class="btn btn-primary btn-lg ">
+                              <i class="fa-solid fa-cart-shopping">
+                              </i></button></a>
+                      </div>
+                  </div>
+                  <br>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>
+  
+  
+  </div>
+  </div>
+  <button *ngIf="isShow" (click)="gotoTop()" >
+    <img src="../../assets/images/arrow-up.png" alt="">
+  </button>
+  
+  
+  

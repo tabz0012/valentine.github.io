@@ -1,0 +1,51 @@
+<div class="bg">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="text-uppercase section-heading" >ستريمرس مدينة فالنتين</h2>
+            
+        </div>
+    </div>
+    <div class="load fade-bottom">
+    <div class="row">
+        <div class="col-7 col-md-5 col-lg-4" *ngFor="let s of shop">
+            <div class="card m-4">
+                <img class="card-img-top" src="../../assets/images/{{s.image}}" alt="Card image">
+                <div class="card-body">
+                  <h5 class="card-title">{{s.name}}</h5>
+                  
+                  <div class="btn ">
+                    <div>
+                        <a href="{{s.twitch}}" target="_blank">
+                            <div class="uiverse">
+                                <span class="tooltip">Twitch</span>
+                                <span>
+                                    <i class="fa-brands fa-twitch"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div > 
+                        <a href="#" target="_blank">
+                            <div class="uiverse ">
+                                <span class="tooltip">{{s.discord}}</span>
+                                <span >
+                                    <i class="fa-brands fa-discord"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                        
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<button *ngIf="isShow" (click)="gotoTop()" >
+    <img src="../../assets/images/arrow-up.png" alt="">
+</button>
+</div>

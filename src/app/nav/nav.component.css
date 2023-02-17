@@ -1,0 +1,62 @@
+.bg {
+    max-width: 100%;
+    background: linear-gradient(183deg,#ffd60a,#000000);
+    background-size: 120% 120%;
+    animation: gradient-animation 4s ease infinite;
+    }
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  .navbar{
+     text-decoration: solid;
+      font-size: large;
+      
+  }
+  .navbar-brand img{
+      width: 126px;
+      height: 143px;
+      max-width: 100%;
+      margin-right: 60%;
+      
+  }
+  .collapse-1 {
+      font-size: large;
+      margin-right: 100px;
+      font-weight: bold;
+  }
+  .navbar-nav{
+      gap: 1rem;
+  }
+  .nav-link:hover{
+      color: var(--header);
+  }
+  .nav-link {
+    color: rgba(255, 255, 255, .5);
+    border-bottom: .25rem solid transparent;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    border-bottom-color: var(--header);
+  }
+  
+  .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+  
+  .active {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+  .bg-2{
+    background: rgb(0,0,0);
+  }
+ 

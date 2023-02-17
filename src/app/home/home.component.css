@@ -1,0 +1,195 @@
+:root{
+
+  --img-transition: .3s;
+  --img-hidden: hidden;
+  --img-scale: scale(1.1);
+}
+.carousel {
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    border-radius: 60px;
+    overflow: hidden;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: auto;
+  }
+
+/* CUSTOMIZE THE row-1
+-------------------------------------------------- */
+.d-flex{
+    gap: 1rem;
+}
+
+.d-flex img{
+  
+  transition: var(--img-transition);
+}
+.d-flex img:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: var(--img-scale);
+  transition: all 1200ms;
+  z-index: 99;
+}
+.d-flex a:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: var(--img-scale);
+  transition: all 1200ms;
+  z-index: 99;
+}
+.bd-placeholder-img:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: var(--img-scale);
+  transition: all 1200ms;
+  z-index: 99;
+}
+.row{
+  background: black;
+}
+.sm{
+  display: flex;
+  justify-content: center;
+  
+}
+.sm a{
+  display: inline-block;
+  font-size: 50px;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 18px;
+  position: relative;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.sm a .fa-discord{
+  color: #5662f6;
+}
+
+.sm a .fa-twitch{
+  color: indigo;
+}
+.sm a .fa-youtube{
+  color:red;
+}
+.sm a .fa-tiktok{
+  color:#131418;
+}
+.fa-tiktok:hover{
+  color:white;
+}
+
+.sm a::before, .sm a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  left:0; 
+  top:0;
+  
+}
+
+.sm a:hover{
+  transform: scale(.8);
+  transition: .3s linear;
+  background-color: black;
+}
+
+.sm a:hover::before{
+border-left: 1px solid #ffd60a;
+border-right: 1px solid #ffd60a;
+transform: skewX(20deg);
+transition: .3s linear;
+}
+
+.sm a:hover::after{
+  border-top: 1px solid #ffd60a;
+  border-bottom: 1px solid #ffd60a;
+  transform: skewY(-20deg);
+  transition: .3s linear;
+  }
+
+
+ 
+  
+  .reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in-out;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+  }
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+  button img{
+    width: 50px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 2rem;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+  }

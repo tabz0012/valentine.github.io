@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root{
+   --main-color:#ffd60a;
+   --header: #ffc300;
+   --orange:#f39c12;
+   --darkblue:#003566;
+   --lightblue:#1670c4;
+   --black:#000000;
+   --white:#fff;
+   --light-color:#666;
+   --light-bg:#eee;
+   --border:0.25px solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+:root{
+  
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+body{
+  height: 100%;
+  background: #000000;
+ 
+}
